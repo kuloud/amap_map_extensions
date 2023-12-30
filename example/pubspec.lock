@@ -262,6 +262,14 @@ packages:
       url: "https://mirrors.tuna.tsinghua.edu.cn/dart-pub/"
     source: hosted
     version: "3.0.2"
+  x_amap_base:
+    dependency: transitive
+    description:
+      name: x_amap_base
+      sha256: c4ab5bd0444dca392bfee634aeaa7213e92529d57ce516796c4a803bb6139792
+      url: "https://mirrors.tuna.tsinghua.edu.cn/dart-pub/"
+    source: hosted
+    version: "1.0.0+2"
 sdks:
   dart: ">=3.2.3 <4.0.0"
-  flutter: ">=3.3.0"
+  flutter: ">=3.0.0"

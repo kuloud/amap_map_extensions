@@ -1,5 +1,6 @@
 import Flutter
 import UIKit
+import MAMapKit
 
 public class AmapMapExtensionsPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
@@ -11,7 +12,9 @@ public class AmapMapExtensionsPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     switch call.method {
     case "getAMapVersion":
-      result("iOS " + UIDevice.current.systemVersion)
+      result(MAMapKitVersion)
+    case "getMapContentApprovalNumber":
+      result(MAMapKitVersion)
     default:
       result(FlutterMethodNotImplemented)
     }
