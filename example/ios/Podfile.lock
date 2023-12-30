@@ -1,6 +1,9 @@
 PODS:
   - AMap3DMap (9.7.0):
     - AMapFoundation (>= 1.8.0)
+  - amap_map (0.0.1):
+    - AMap3DMap
+    - Flutter
   - amap_map_extensions (0.0.1):
     - AMap3DMap
     - Flutter
@@ -10,6 +13,7 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
+  - amap_map (from `.symlinks/plugins/amap_map/ios`)
   - amap_map_extensions (from `.symlinks/plugins/amap_map_extensions/ios`)
   - Flutter (from `Flutter`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
@@ -20,6 +24,8 @@ SPEC REPOS:
     - AMapFoundation
 
 EXTERNAL SOURCES:
+  amap_map:
+    :path: ".symlinks/plugins/amap_map/ios"
   amap_map_extensions:
     :path: ".symlinks/plugins/amap_map_extensions/ios"
   Flutter:
@@ -29,6 +35,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AMap3DMap: dce25dd3e51e6b92109caa7d0c97fc6055830fb3
+  amap_map: fadcdab77d3fbb12a983c1e8aa434c3ef8dd4955
   amap_map_extensions: 3a956c604062edf21eda1c7cbf68a17ae38959d4
   AMapFoundation: 9885c48fc3a78fdfb84a0299a2293e56ea3c9fec
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854

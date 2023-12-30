@@ -5,7 +5,7 @@ import 'package:amap_map_extensions/amap_map_extensions_method_channel.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  MethodChannelAmapMapExtensions platform = MethodChannelAmapMapExtensions();
+  MethodChannelAMapMapExtensions platform = MethodChannelAMapMapExtensions();
   const MethodChannel channel = MethodChannel('amap_map_extensions');
 
   setUp(() {

@@ -15,7 +15,7 @@ void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   testWidgets('getAMapVersion test', (WidgetTester tester) async {
-    final AmapMapExtensions plugin = AmapMapExtensions();
+    final AMapMapExtensions plugin = AMapMapExtensions();
     final String? version = await plugin.getAMapVersion();
     // The version string depends on the host platform running the test, so
     // just assert that some non-empty string is returned.

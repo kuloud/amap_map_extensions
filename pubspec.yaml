@@ -1,8 +1,9 @@
 name: amap_map_extensions
 description: Amap SDK Flutter plugin extension for integrating AMapSDK in iOS and Android applications.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/kuloud/amap_map_extensions
 issue_tracker: https://github.com/kuloud/amap_map_extensions/issues
+publish_to: 'none'
 
 topics:
   - amap
@@ -17,6 +18,9 @@ dependencies:
   plugin_platform_interface: ^2.0.2
 
   x_amap_base: ^1.0.0+2
+  amap_map: ^1.0.2
+  # amap_map:
+  #   path: ../x_amap_map
 
 dev_dependencies:
   flutter_test:
@@ -42,9 +46,9 @@ flutter:
     platforms:
       android:
         package: com.kuloud.flutter.map.ext.amap_map_extensions
-        pluginClass: AmapMapExtensionsPlugin
+        pluginClass: AMapMapExtensionsPlugin
       ios:
-        pluginClass: AmapMapExtensionsPlugin
+        pluginClass: AMapMapExtensionsPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

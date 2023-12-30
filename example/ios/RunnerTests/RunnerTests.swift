@@ -11,7 +11,7 @@ import XCTest
 class RunnerTests: XCTestCase {
 
   func testGetPlatformVersion() {
-    let plugin = AmapMapExtensionsPlugin()
+    let plugin = AMapMapExtensionsPlugin()
 
     let call = FlutterMethodCall(methodName: "getAMapVersion", arguments: [])
 

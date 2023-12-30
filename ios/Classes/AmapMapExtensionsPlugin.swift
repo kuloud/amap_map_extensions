@@ -2,10 +2,10 @@ import Flutter
 import UIKit
 import MAMapKit
 
-public class AmapMapExtensionsPlugin: NSObject, FlutterPlugin {
+public class AMapMapExtensionsPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "amap_map_extensions", binaryMessenger: registrar.messenger())
-    let instance = AmapMapExtensionsPlugin()
+    let instance = AMapMapExtensionsPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 

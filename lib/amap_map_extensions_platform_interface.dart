@@ -2,23 +2,23 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'amap_map_extensions_method_channel.dart';
 
-abstract class AmapMapExtensionsPlatform extends PlatformInterface {
-  /// Constructs a AmapMapExtensionsPlatform.
-  AmapMapExtensionsPlatform() : super(token: _token);
+abstract class AMapMapExtensionsPlatform extends PlatformInterface {
+  /// Constructs a AMapMapExtensionsPlatform.
+  AMapMapExtensionsPlatform() : super(token: _token);
 
   static final Object _token = Object();
 
-  static AmapMapExtensionsPlatform _instance = MethodChannelAmapMapExtensions();
+  static AMapMapExtensionsPlatform _instance = MethodChannelAMapMapExtensions();
 
-  /// The default instance of [AmapMapExtensionsPlatform] to use.
+  /// The default instance of [AMapMapExtensionsPlatform] to use.
   ///
-  /// Defaults to [MethodChannelAmapMapExtensions].
-  static AmapMapExtensionsPlatform get instance => _instance;
+  /// Defaults to [MethodChannelAMapMapExtensions].
+  static AMapMapExtensionsPlatform get instance => _instance;
 
   /// Platform-specific implementations should set this with their own
-  /// platform-specific class that extends [AmapMapExtensionsPlatform] when
+  /// platform-specific class that extends [AMapMapExtensionsPlatform] when
   /// they register themselves.
-  static set instance(AmapMapExtensionsPlatform instance) {
+  static set instance(AMapMapExtensionsPlatform instance) {
     PlatformInterface.verifyToken(instance, _token);
     _instance = instance;
   }
