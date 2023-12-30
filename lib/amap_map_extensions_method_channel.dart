@@ -10,8 +10,8 @@ class MethodChannelAmapMapExtensions extends AmapMapExtensionsPlatform {
   final methodChannel = const MethodChannel('amap_map_extensions');
 
   @override
-  Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
+  Future<String?> getAMapVersion() async {
+    final version = await methodChannel.invokeMethod<String>('getAMapVersion');
     return version;
   }
 }

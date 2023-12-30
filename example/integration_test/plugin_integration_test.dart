@@ -6,7 +6,6 @@
 // For more information about Flutter integration tests, please see
 // https://docs.flutter.dev/cookbook/testing/integration/introduction
 
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 
@@ -15,9 +14,9 @@ import 'package:amap_map_extensions/amap_map_extensions.dart';
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('getPlatformVersion test', (WidgetTester tester) async {
+  testWidgets('getAMapVersion test', (WidgetTester tester) async {
     final AmapMapExtensions plugin = AmapMapExtensions();
-    final String? version = await plugin.getPlatformVersion();
+    final String? version = await plugin.getAMapVersion();
     // The version string depends on the host platform running the test, so
     // just assert that some non-empty string is returned.
     expect(version?.isNotEmpty, true);

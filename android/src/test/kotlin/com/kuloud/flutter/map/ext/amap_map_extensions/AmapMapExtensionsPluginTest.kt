@@ -15,10 +15,10 @@ import org.mockito.Mockito
 
 internal class AmapMapExtensionsPluginTest {
   @Test
-  fun onMethodCall_getPlatformVersion_returnsExpectedValue() {
+  fun onMethodCall_getAMapVersion_returnsExpectedValue() {
     val plugin = AmapMapExtensionsPlugin()
 
-    val call = MethodCall("getPlatformVersion", null)
+    val call = MethodCall("getAMapVersion", null)
     val mockResult: MethodChannel.Result = Mockito.mock(MethodChannel.Result::class.java)
     plugin.onMethodCall(call, mockResult)
 

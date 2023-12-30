@@ -7,23 +7,24 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 class MockAmapMapExtensionsPlatform
     with MockPlatformInterfaceMixin
     implements AmapMapExtensionsPlatform {
-
   @override
-  Future<String?> getPlatformVersion() => Future.value('42');
+  Future<String?> getAMapVersion() => Future.value('42');
 }
 
 void main() {
-  final AmapMapExtensionsPlatform initialPlatform = AmapMapExtensionsPlatform.instance;
+  final AmapMapExtensionsPlatform initialPlatform =
+      AmapMapExtensionsPlatform.instance;
 
   test('$MethodChannelAmapMapExtensions is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelAmapMapExtensions>());
   });
 
-  test('getPlatformVersion', () async {
+  test('getAMapVersion', () async {
     AmapMapExtensions amapMapExtensionsPlugin = AmapMapExtensions();
-    MockAmapMapExtensionsPlatform fakePlatform = MockAmapMapExtensionsPlatform();
+    MockAmapMapExtensionsPlatform fakePlatform =
+        MockAmapMapExtensionsPlatform();
     AmapMapExtensionsPlatform.instance = fakePlatform;
 
-    expect(await amapMapExtensionsPlugin.getPlatformVersion(), '42');
+    expect(await amapMapExtensionsPlugin.getAMapVersion(), '42');
   });
 }

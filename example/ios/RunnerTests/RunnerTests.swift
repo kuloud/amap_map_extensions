@@ -13,7 +13,7 @@ class RunnerTests: XCTestCase {
   func testGetPlatformVersion() {
     let plugin = AmapMapExtensionsPlugin()
 
-    let call = FlutterMethodCall(methodName: "getPlatformVersion", arguments: [])
+    let call = FlutterMethodCall(methodName: "getAMapVersion", arguments: [])
 
     let resultExpectation = expectation(description: "result block must be called.")
     plugin.handle(call) { result in
