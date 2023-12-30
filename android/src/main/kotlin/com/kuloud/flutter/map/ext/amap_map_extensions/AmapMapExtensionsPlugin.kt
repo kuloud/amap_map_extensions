@@ -8,6 +8,8 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 
+import com.amap.api.maps.MapsInitializer
+
 /** AmapMapExtensionsPlugin */
 class AmapMapExtensionsPlugin: FlutterPlugin, MethodCallHandler {
   /// The MethodChannel that will the communication between Flutter and native Android
@@ -23,7 +25,7 @@ class AmapMapExtensionsPlugin: FlutterPlugin, MethodCallHandler {
 
   override fun onMethodCall(call: MethodCall, result: Result) {
     if (call.method == "getAMapVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+      result.success("${MapsInitializer.getVersion()}")
     } else {
       result.notImplemented()
     }
