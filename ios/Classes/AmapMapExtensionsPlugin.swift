@@ -13,8 +13,6 @@ public class AMapMapExtensionsPlugin: NSObject, FlutterPlugin {
     switch call.method {
     case "getAMapVersion":
       result(MAMapKitVersion)
-    case "getMapContentApprovalNumber":
-      result(MAMapKitVersion)
     default:
       result(FlutterMethodNotImplemented)
     }
